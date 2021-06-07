@@ -13,12 +13,12 @@ public class playerInteraction : MonoBehaviour
         notification.SetActive(true);
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         baloonChat.SetActive(true);
         notification.SetActive(false);
     }
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D coll)
     {
         baloonChat.SetActive(false);
         notification.SetActive(true);
